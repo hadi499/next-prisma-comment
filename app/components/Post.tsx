@@ -1,8 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+type Prop = {
+  id: string;
+  name: string;
+  avatar: string;
+  postTitle: string;
+  comments: string;
+};
 
-export default function Post({ id, name, avatar, postTitle, comments }) {
+export default function Post({ id, name, avatar, postTitle, comments }: Prop) {
   return (
     <div className="bg-white my-8 p-8 rounded-lg ">
       <div className="flex items-center gap-2">

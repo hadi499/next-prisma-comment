@@ -18,11 +18,9 @@ export default function Home() {
   });
   if (error) return error;
   if (isLoading) return "Loading.....";
-  console.log(data);
 
   return (
     <main>
-      <h1>hello</h1>
       <AddPost />
       {data?.map((post) => (
         <Post

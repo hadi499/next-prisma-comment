@@ -9,6 +9,7 @@ export type PostType = {
   Comment?: {
     createdAt: string;
     id: string;
+    message: string;
     postId: string;
     userId: string;
   }[];
